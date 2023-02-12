@@ -1,0 +1,31 @@
+<div class="moviesContainer">
+
+
+
+
+
+  <div class="containerAddMovie">
+    <img src="images/el-gato-con-boté.png" alt="el gato con boé" width="100%"/>
+  </div>
+  <h2>Ironhack Cinema</h2>
+  <p>Click on the movie to check the showtimes!</p>
+
+  <div class="galery">
+
+    {{#each eachMovie}}
+
+      <div class="galery-element">
+
+        <img src="{{this.image}}" alt="{{this.title}} image" />
+        <h3>{{this.title}}</h3>
+
+        <div class="wrapperLink">
+          <a href="movies/{{this._id}}"><p>See more</p></a>
+        </div>
+
+      </div>
+
+    {{/each}}
+
+  </div>
+</div>

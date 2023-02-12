@@ -1,0 +1,29 @@
+<div class="detailContainer">
+
+  <div class="wrapperImgDetail">
+
+    <img src="{{movieDetail.image}}" alt="{{movieDetail.title}} image" />
+  </div>
+
+  <div class="wrapperTextDetail">
+
+    <a href="/movies">Go back</a>
+    <h3>{{movieDetail.title}}</h3>
+    <h4>Stars</h4>
+    {{#each movieDetail.stars}}
+      <li>{{this}}</li>
+    {{/each}}
+
+    <p>{{movieDetail.description}}</p>
+
+
+<div class="wrapperShowtime">
+    {{#each movieDetail.showtimes}}
+      <p>{{this}}</p>
+    {{/each}}
+</div>
+
+
+  </div>
+
+</div>
